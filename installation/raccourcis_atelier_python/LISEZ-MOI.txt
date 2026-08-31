@@ -1,0 +1,64 @@
+======================================================
+ RACCOURCIS "ATELIER PYTHON" - NOTICE DE DEPLOIEMENT
+======================================================
+
+Ce dossier contient les raccourcis a copier sur chaque poste
+AVANT l'atelier, une fois Python deja installe dessus.
+
+Ils ouvrent IDLE ou une invite Python directement dans un
+dossier de travail commun : "Atelier Python" sur le Bureau
+(cree automatiquement au premier lancement si besoin).
+
+
+---------------------
+WINDOWS
+---------------------
+Fichier a utiliser : creer_raccourcis_windows.vbs
+
+1. Copier ce fichier sur le poste (cle USB, dossier partage...)
+2. Double-cliquer dessus UNE SEULE FOIS
+3. Deux raccourcis apparaissent alors sur le Bureau :
+      - IDLE - Atelier
+      - Terminal Python - Atelier
+4. Le fichier .vbs n'est plus utile ensuite, il peut etre
+   supprime ou garde de cote pour un autre poste.
+
+A refaire sur chaque ordinateur Windows de l'atelier.
+
+
+---------------------
+MAC
+---------------------
+Fichiers a utiliser : IDLE_Atelier.command
+                       Terminal_Atelier.command
+
+1. Copier ces deux fichiers directement sur le Bureau du Mac
+2. Au premier double-clic, macOS peut afficher un avertissement
+   de securite ("ne peut pas etre ouvert car il provient d'un
+   developpeur non identifie"). Dans ce cas :
+      - Clic droit (ou Ctrl+clic) sur le fichier
+      - Choisir "Ouvrir"
+      - Confirmer dans la fenetre qui apparait
+      (cette verification n'est necessaire qu'une seule fois
+      par fichier et par machine)
+3. Si le double-clic ouvre le fichier dans un editeur de texte
+   au lieu de l'executer, cela signifie que les droits
+   d'execution ont ete perdus pendant la copie. Dans ce cas,
+   ouvrir le Terminal et taper :
+        chmod +x ~/Desktop/IDLE_Atelier.command
+        chmod +x ~/Desktop/Terminal_Atelier.command
+
+A refaire sur chaque Mac de l'atelier.
+
+
+---------------------
+BON A SAVOIR
+---------------------
+- Le dossier de travail "Atelier Python" est cree
+  automatiquement sur le Bureau au premier lancement.
+- Tous les fichiers .py crees par les participants pendant
+  l'atelier doivent etre enregistres dans ce meme dossier :
+  ainsi, tous les modules s'importeront les uns les autres
+  sans configuration supplementaire.
+- Ces raccourcis supposent que Python est deja installe sur
+  le poste (voir la fiche "Installer Python").

@@ -1,0 +1,21 @@
+ANDROID
+
+Installer au préalable un environnement Python Android compatible
+(par exemple QPython, après test préalable).
+
+Ne pas utiliser les scripts Windows/macOS/Linux.
+
+Copier le dossier `atelier` dans le répertoire de scripts de l'environnement
+Python Android.
+
+Installer ensuite avec le gestionnaire de paquets disponible :
+
+    wavesynth
+    MIDIUtil
+
+Puis lancer :
+
+    test_installation.py
+
+IMPORTANT : tester l'ensemble sur le téléphone exact utilisé pour l'atelier.
+Aucun environnement virtuel ou Python portable n'est utilisé.

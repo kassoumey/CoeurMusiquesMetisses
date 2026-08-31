@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <paragraph index="6" node_type="writer">Atelier Coeur des musiques metisses</paragraph>
+ <paragraph index="15" node_type="writer">Page  / </paragraph>
+ <object alt="" name="Image1" object_type="graphic"/>
+ <paragraph index="30" node_type="writer">Installer Python sur mon ordinateur</paragraph>
+ <object index="32" name="Tableau1" object_type="table"/>
+ <paragraph index="34" node_type="writer" parent_index="32">Avant de commencer</paragraph>
+ <paragraph index="35" node_type="writer" parent_index="32">•  Il faut être connecté à Internet.</paragraph>
+ <paragraph index="36" node_type="writer" parent_index="32">•  L'installation prend environ 10 minutes.</paragraph>
+ <paragraph index="37" node_type="writer" parent_index="32">•  Contactez moi en message privé si vous avez besoin d’aide.  Georges</paragraph>
+ <paragraph index="40" node_type="writer">Sur un ordinateur Windows</paragraph>
+ <paragraph index="41" node_type="writer">☐  Étape 1 — Ouvrir le site internet officiel</paragraph>
+ <paragraph index="42" node_type="writer">Ouvrir le navigateur internet (Edge, Chrome…) et taper cette adresse : python.org/downloads</paragraph>
+ <paragraph index="43" node_type="writer">☐  Étape 2 — Télécharger Python</paragraph>
+ <paragraph index="44" node_type="writer">Cliquer sur le gros bouton jaune &quot;Download Python 3.x.x&quot;. Le téléchargement démarre tout seul. </paragraph>
+ <paragraph index="45" node_type="writer">☐  Étape 3 — Ouvrir le fichier téléchargé</paragraph>
+ <paragraph index="46" node_type="writer">En bas de l’écran (ou dans le dossier &quot;Téléchargements&quot;), double-cliquer sur le fichier qui vient d’arriver. Son nom commence par &quot;python-&quot;.</paragraph>
+ <paragraph index="47" node_type="writer">☐  Étape 4 — ⚠ Cocher la case IMPORTANTE</paragraph>
+ <paragraph index="48" node_type="writer">Sur le premier écran, bien cocher en bas la case &quot;Add python.exe to PATH&quot; avant de continuer. </paragraph>
+ <paragraph index="49" node_type="writer">☐  Étape 5 — Lancer l'installation</paragraph>
+ <paragraph index="50" node_type="writer">Cliquer sur &quot;Install Now&quot;, puis patienter. Une barre de progression s’affiche.</paragraph>
+ <paragraph index="51" node_type="writer">☐  Étape 6 — Terminer</paragraph>
+ <paragraph index="52" node_type="writer">Quand le message &quot;Setup was successful&quot; apparaît, cliquer sur &quot;Close&quot;.</paragraph>
+ <paragraph index="53" node_type="writer">Sur un ordinateur Mac</paragraph>
+ <paragraph index="54" node_type="writer">☐  Étape 1 — Ouvrir le site internet officiel</paragraph>
+ <paragraph index="55" node_type="writer">Ouvrir Safari (ou un autre navigateur) et taper cette adresse : python.org/downloads</paragraph>
+ <paragraph index="56" node_type="writer">☐  Étape 2 — Télécharger Python</paragraph>
+ <paragraph index="57" node_type="writer">Cliquer sur le gros bouton jaune &quot;Download Python 3.x.x&quot;. Le fichier se télécharge dans le dossier &quot;Téléchargements&quot;.</paragraph>
+ <paragraph index="58" node_type="writer">☐  Étape 3 — Ouvrir le fichier téléchargé</paragraph>
+ <paragraph index="59" node_type="writer">Double-cliquer sur le fichier téléchargé (il se termine par &quot;.pkg&quot;).</paragraph>
+ <paragraph index="60" node_type="writer">☐  Étape 4 — Suivre les écrans</paragraph>
+ <paragraph index="61" node_type="writer">Cliquer sur &quot;Continuer&quot;, puis &quot;Continuer&quot;, puis &quot;Accepter&quot;, puis &quot;Installer&quot;, en laissant les réglages tels quels.</paragraph>
+ <paragraph index="62" node_type="writer">☐  Étape 5 — Entrer le mot de passe du Mac</paragraph>
+ <paragraph index="63" node_type="writer">Le Mac demande le mot de passe habituel de l'ordinateur pour confirmer l'installation.</paragraph>
+ <paragraph index="64" node_type="writer">☐  Étape 6 — Terminer</paragraph>
+ <paragraph index="65" node_type="writer">Quand le message &quot;L’installation a réussi&quot; apparaît, cliquer sur &quot;Fermer&quot;.</paragraph>
+ <paragraph index="66" node_type="writer">tions : Python est installé et prêt à l'emploi !</paragraph>
+ <object index="67" name="Tableau2" object_type="table"/>
+ <paragraph index="69" node_type="writer" parent_index="67">Un souci pendant l'installation ?</paragraph>
+ <paragraph index="70" node_type="writer" parent_index="67">•  Ne pas s'inquiéter, c'est normal au début. Je vais vous aider.</paragraph>
+</indexing>

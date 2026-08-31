@@ -1,0 +1,14 @@
+ANDROID
+
+Ne pas utiliser les scripts Windows/macOS/Linux.
+
+L'environnement Python Android doit être installé au préalable (par exemple
+QPython, après test sur le modèle de téléphone retenu).
+
+Copier le dossier atelier dans l'environnement de scripts, puis installer
+wavesynth et MIDIUtil avec le gestionnaire de paquets disponible.
+
+Lancer ensuite test_installation.py.
+
+IMPORTANT : tester wavesynth et la génération audio/MIDI sur le téléphone
+exact utilisé pour l'atelier avant la séance collective.
