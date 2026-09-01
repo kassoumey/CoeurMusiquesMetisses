@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Une lettre en 8 bits</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:25px auto;padding:0 18px;color:#222}
+h1{background:#174a86;color:white;text-align:center;padding:16px;border-radius:10px}
+.box{border:1px solid #b8d0ea;border-radius:10px;padding:18px;margin:18px 0}
+.green{background:#eef7ea;border-color:#a9c89d}
+.torches{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:25px 0}
+.item{text-align:center}.torch{width:65px;height:105px;border-radius:32px 32px 16px 16px;background:#111;border:3px solid #333;cursor:pointer}
+.torch.on{background:#fff;box-shadow:0 0 25px #ffd84d}.bit{font-size:22px;font-weight:bold}
+.result{text-align:center;font-size:20px;line-height:1.8}.letter{font-size:34px;font-weight:bold}
+.controls{text-align:center}.controls button{padding:9px 16px;margin:5px}
+.feedback{text-align:center;font-size:19px;font-weight:bold;min-height:28px}
+code{background:#eee;padding:3px 6px}
+</style>
+</head>
+<body>
+<h1>Exercice — Une lettre en 8 bits</h1>
+
+<div class="box">
+<p>Une lampe <b>allumée = 1</b> et une lampe <b>éteinte = 0</b>.</p>
+<p>Un ordinateur utilise des suites de 0 et de 1 pour représenter les informations.</p>
+</div>
+
+<div class="box">
+<h2>1. Recherchez le code ASCII de « o » minuscule</h2>
+<p>Le code ASCII de <b>o</b> est :</p>
+<p style="text-align:center;font-size:26px"><code>01101111</code></p>
+<p>Soit <b>111</b> en base 10 et <b>0x6F</b> en hexadécimal.</p>
+</div>
+
+<div class="box">
+<h2>2. Représentez ce code avec 8 torches</h2>
+<p>Cliquez sur chaque torche pour l'allumer ou l'éteindre.</p>
+<div class="torches" id="torches"></div>
+<div class="controls">
+<button onclick="resetBits()">Tout éteindre</button>
+<button onclick="answer()">Afficher la réponse</button>
+</div>
+<div class="result">
+Code : <b id="bin">00000000</b><br>
+Décimal : <b id="dec">0</b><br>
+Hexadécimal : <b id="hex">0x00</b><br>
+Lettre ASCII : <span class="letter" id="char">?</span>
+</div>
+<div class="feedback" id="feedback"></div>
+</div>
+
+<div class="box">
+<h2>3. Que remarquez-vous ?</h2>
+<p>Avec 8 bits, on peut représenter <b>256 combinaisons</b> différentes, de
+<code>00000000</code> à <code>11111111</code>.</p>
+<p>Une combinaison de 8 états peut représenter un caractère, comme la lettre « o ».</p>
+</div>
+
+<div class="box green">
+<h2>Question pour la discussion</h2>
+<p><b>Comment l'ordinateur peut-il savoir qu'une suite de 8 états électriques représente la lettre « o » ?</b></p>
+</div>
+
+<script>
+const cible="01101111"; let bits=Array(8).fill(0);
+function draw(){
+ const c=document.getElementById("torches"); c.innerHTML="";
+ bits.forEach((v,i)=>{
+  const d=document.createElement("div"); d.className="item";
+  const b=document.createElement("button"); b.className="torch"+(v?" on":"");
+  b.onclick=()=>{bits[i]=bits[i]?0:1;draw();update()};
+  const n=document.createElement("div"); n.className="bit"; n.textContent=v;
+  d.append(b,n); c.appendChild(d);
+ });
+}
+function update(){
+ const s=bits.join(""),v=parseInt(s,2);
+ document.getElementById("bin").textContent=s;
+ document.getElementById("dec").textContent=v;
+ document.getElementById("hex").textContent="0x"+v.toString(16).toUpperCase().padStart(2,"0");
+ document.getElementById("char").textContent=(v>=32&&v<=126)?String.fromCharCode(v):"—";
+ document.getElementById("feedback").textContent=s===cible?"✓ Correct : ces 8 bits représentent « o ».":"";
+}
+function resetBits(){bits=Array(8).fill(0);draw();update()}
+function answer(){bits=cible.split("").map(Number);draw();update()}
+draw();update();
+</script>
+</body>
+</html>
